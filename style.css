@@ -1,0 +1,237 @@
+/* style.css */
+
+/* ---------- Base ---------- */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafc;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+/* ---------- Header ---------- */
+
+header {
+  background-color: #0d2f66;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+header .container h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a,
+nav button {
+  color: white;
+  background: none;
+  border: none;
+  margin: 0 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav button:hover {
+  text-decoration: underline;
+  color: #dbeafe;
+}
+
+/* ---------- Main Content ---------- */
+
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+h2 {
+  border-bottom: 2px solid #0d2f66;
+  padding-bottom: 0.3rem;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: #0d2f66;
+}
+
+ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+/* ---------- Blockquote ---------- */
+
+blockquote {
+  font-style: italic;
+  background: #e8f0fe;
+  border-left: 5px solid #0d2f66;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+}
+
+/* ---------- Iframe ---------- */
+
+iframe {
+  border: none;
+  border-radius: 6px;
+}
+
+/* ---------- Contact ---------- */
+
+.contact a {
+  color: #0d2f66;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+  color: #0d2f66;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #0d2f66;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* ---------- Projects Section ---------- */
+
+.projects {
+  padding: 2rem;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #e0e7ff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.project-item img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-item img:hover {
+  transform: scale(1.03);
+}
+
+.project-item h3 {
+  margin: 0.5rem 0 0.2rem;
+  font-size: 1.2rem;
+  color: #1e3a8a;
+}
+
+.project-item p {
+  font-size: 1rem;
+  text-align: center;
+  color: #374151;
+}
+
+/* ---------- Responsive Design ---------- */
+
+@media (min-width: 768px) {
+  .project-item {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .project-item img {
+    width: 40%;
+    max-width: 250px;
+    margin-right: 1rem;
+  }
+
+  .project-item div {
+    flex: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  header .container h1 {
+    font-size: 1.8rem;
+  }
+
+  nav a,
+  nav button {
+    display: block;
+    margin: 0.5rem auto;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+header {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #1e3a8a;
+}
+
+.header-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+nav {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+

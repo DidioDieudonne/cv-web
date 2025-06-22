@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BYAOMBE Dieudonné - CV en ligne</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="alternate" hreflang="en" href="../index.html">
+  <script>
+    function toggleLanguage() {
+      const currentLang = document.documentElement.lang;
+      window.location.href = currentLang === 'fr' ? '../index.html' : 'index.html';
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container header-profile">
+      <img src="../assets/photo_profil.jpg" alt="Photo de profil de BYAOMBE Dieudonné" class="profile-pic" />
+      <div>
+        <h1>BYAOMBE Dieudonné</h1>
+        <p>Data Scientist | Ingénieur Télécoms | Analyste Data SIG</p>
+        <p>Hanoï, Vietnam | dieudobyaombemw@gmail.com | +84 84 217 9337</p>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#projects">Projets</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#publications">Publications</a>
+      <a href="#gis-gallery">Galerie SIG</a>
+      <a href="#contact">Contact</a>
+      <button onclick="toggleLanguage()">FR / EN</button>
+    </nav>
+  </header>
+
+
+
+  <main>
+    <section class="objective">
+      <h2>Objectif Professionnel</h2>
+      <p>Actuellement en phase finale de Master Informatique (Systèmes Intelligents et Multimédia), je suis à la recherche d’une opportunité professionnelle dans les domaines de la science des données, de l’analyse de données, des systèmes intelligents ou de l’analyse spatiale. Je souhaite mettre à profit mes compétences en intelligence artificielle, en programmation Python et en systèmes d'information géographique (SIG) au sein d’une entreprise innovante ou d’une organisation engagée.</p>
+
+    </section>
+
+    <section class="education">
+      <h2>Formation</h2>
+      <ul>
+        <li>Master Systèmes Intelligents et Multimédia – La Rochelle Université (France) / Université Nationale du Vietnam – IFI (Vietnam), 2023–2025</li>
+        <li>Licence en Génie Électrique – Télécommunications – ISTA, Kinshasa (RDC), 2017–2022</li>
+      </ul>
+    </section>
+
+    <section class="experience">
+    <h2>Expériences professionnelles</h2>
+    <ul>
+        <li>
+        <strong>Stagiaire de recherche</strong> – IRIT, Université Toulouse Capitole (à distance depuis ACROSS Hanoï) – 2025<br>
+        ▸ Projet <strong>PERFORSSA</strong> : Perception des risques dans les socio-écosystèmes forestiers<br>
+        ▸ Automatisation de la fusion des cartes participatives <strong>ZADA</strong> et intégration ontologique associée<br>
+        ▸ Développement d’une interface <strong>SIG semi-automatisée</strong><br>
+        ▸ Alignement ontologique des concepts de <strong>vulnérabilité</strong> et de <strong>perception du risque</strong>
+        </li>
+          
+        <li>
+        <strong>Analyste de données spatiales & Cartographe</strong> – Sky Geologic Investment, Kinshasa (2023)<br>
+        ▸ Analyse et traitement de données géospatiales avec <strong>QGIS</strong>, <strong>ArcGIS</strong> et <strong>PostgreSQL</strong><br>
+        ▸ Production de cartes thématiques pour projets environnementaux et miniers
+        </li>
+        <li>
+        <strong>Informaticien / Gestionnaire en cybersécurité</strong> – Armobit, Kinshasa (2020–2021)<br>
+        ▸ Sécurisation des infrastructures informatiques<br>
+        ▸ Réalisation d’audits de cybersécurité et veille technologique
+        </li>
+    </ul>
+    </section>
+
+    <section class="skills">
+    <h2>Compétences Techniques</h2>
+    <ul>
+        <li><strong>Deep Learning / Machine Learning :</strong> PyTorch, TensorFlow, scikit-learn, pandas, numpy</li>
+        <li><strong>Développement :</strong> Python (Django, Flask), Java (Spring Boot), HTML/CSS</li>
+        <li><strong>Analyse de données / Visualisation :</strong> pandas, matplotlib, seaborn, Power BI <em>(en cours d’apprentissage)</em></li>
+        <li><strong>Analyse spatiale :</strong> QGIS, ArcGIS, PostgreSQL/PostGIS</li>
+        <li><strong>IA neuromorphique :</strong> Snntorch, SpikingJelly, Brian2</li>
+        <li><strong>Systèmes / Réseaux :</strong> LAN/WLAN, 3G/4G, cybersécurité</li>
+        <li><strong>Outils :</strong> Git, Linux, Jupyter, Docker</li>
+    </ul>
+    </section>
+
+
+    <section id="projects" class="projects">
+      <h2>Projets</h2>
+
+      <div class="project-item">
+        <img src="../assets/cnn1.png" alt="Reconnaissance d’Expression Faciale">
+        <div>
+          <h3>Reconnaissance d’Expression Faciale</h3>
+          <p>Comparaison des performances énergétiques entre CNN et SNN pour la reconnaissance des expressions faciales.</p>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <img src="../assets/education_tracking.png" alt="Suivi Éducatif">
+        <div>
+          <h3>Application de Suivi Éducatif</h3>
+          <p>Développée avec LLM et RDF Cube pour des recommandations personnalisées via langage naturel.</p>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <img src="../assets/landslide_detection.png" alt="Détection de Glissements de Terrain">
+        <div>
+          <h3>Détection de Glissements de Terrain</h3>
+          <p>Reproduction de Landslide4Sense à partir des données Sentinel-2 et des pentes.</p>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <img src="../assets/information_spotting.png" alt="Recherche Visuelle de Documents">
+        <div>
+          <h3>Recherche Visuelle de Documents</h3>
+          <p>Recherche de contenu visuel dans les documents avec descripteurs SIFT et interface Streamlit.</p>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <img src="../assets/mutuzo.png" alt="Mutuzo">
+        <div>
+          <h3>Mutuzo – Détection de Maladies des Feuilles</h3>
+          <p>Application web utilisant Faster R-CNN pour détecter et classer les maladies foliaires en temps réel.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="certifications">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Le langage SQL : le guide complet – Alphorm (2020)</li>
+        <li>Big Data et Hadoop : le guide complet – Alphorm (2022)</li>
+        <li>Big Data et Apache Spark – Alphorm (2022)</li>
+        <li>Haute disponibilité avec PostgreSQL – Alphorm (2022)</li>
+        <li>ArcGIS Pro : Devenir un expert SIG avec le logiciel – Udemy (2023)</li>
+        <li>GIS – Part 1 (École Polytechnique Fédérale de Lausanne / EPFL) – Coursera (2024)</li>
+      </ul>
+    </section>
+    <section id="publications" class="publications">
+      <h2>Publications & Présentations</h2>
+      <ul>
+        <li>« Ontologies pour la cartographie des risques forestiers » – Présenté à l’atelier PERFORSSA, 2025</li>
+        <li>« IA pour la détection des glissements de terrain » – Résumé de conférence en cours d’évaluation</li>
+      </ul>
+    </section>
+
+    <section id="gis-gallery" class="gis-gallery">
+    <h2>Galerie de Projets SIG</h2>
+    <embed src="../assets/carte1.pdf" type="application/pdf" width="100%" height="600px" />
+    <p>Carte SIG au format PDF.</p>
+    </section>
+
+
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>Email : <a href="mailto:dieudobyaombemw@gmail.com">dieudobyaombemw@gmail.com</a></p>
+      <p>GitHub : <a href="https://github.com/DidioDieudonne">DidioDieudonne</a></p>
+      <p>LinkedIn : <a href="https://www.linkedin.com/in/byaombe-dieudonne">BYAOMBE Dieudonné</a></p>
+      <p>Telegram : @BYAOMBEDieudonne</p>
+    </section>
+  </main>
+
+  <footer>
+  </footer>
+</body>
+</html>

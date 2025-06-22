@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BYAOMBE Dieudonné - Online CV</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="alternate" hreflang="fr" href="fr/index.html">
+  <script>
+    function toggleLanguage() {
+      const currentLang = document.documentElement.lang;
+      window.location.href = currentLang === 'en' ? 'fr/index.html' : '../index.html';
+    }
+  </script>
+</head>
+<body>
+    <header>
+    <div class="container header-profile">
+        <img src="../assets/photo_profil.jpg" alt="Photo de profil de BYAOMBE Dieudonné" class="profile-pic" />
+        <div>
+        <h1>BYAOMBE Dieudonné</h1>
+        <p>Data Scientist | Telecom Engineer | GIS Data Analyst</p>
+        <p>Hanoï, Vietnam | dieudobyaombemw@gmail.com | +84 84 217 9337</p>
+        </div>
+    </div>
+
+    <nav>
+        <a href="#projects">Projets</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#publications">Publications</a>
+        <a href="#gis-gallery">Galerie SIG</a>
+        <a href="#contact">Contact</a>
+        <button onclick="toggleLanguage()">FR / EN</button>
+    </nav>
+    </header>
+
+  <main>
+    <section class="objective">
+      <h2>Professional Objective</h2>
+      <p>Currently completing a Master's degree in Computer Science (Intelligent and Multimedia Systems), I am seeking a professional opportunity in the fields of data science, data analysis, intelligent systems, or spatial analysis. I aim to apply my skills in artificial intelligence, Python programming, and geographic information systems (GIS) within an innovative company or a mission-driven organization.</p>
+
+    </section>
+
+    <section class="education">
+      <h2>Education</h2>
+      <ul>
+        <li>Master’s in Intelligent Systems and Multimedia – La Rochelle Université (France) / Vietnam National University – IFI (Vietnam), 2023–2025</li>
+        <li>Bachelor’s in Electrical Engineering – Telecommunications – ISTA, Kinshasa (RDC), 2017–2022</li>
+      </ul>
+    </section>
+
+    <section class="experience">
+    <h2>Professional Experience</h2>
+    <ul>
+        <li>
+        <strong>Research Intern</strong> – IRIT, Toulouse Capitole University (remote from ACROSS Hanoi) – 2025<br>
+        ▸ <strong>PERFORSSA Project</strong>: Risk perception in forest socio-ecosystems<br>
+        ▸ Automation of participatory <strong>ZADA</strong> map merging and related ontology integration<br>
+        ▸ Development of a <strong>semi-automated GIS interface</strong><br>
+        ▸ Ontological alignment of <strong>vulnerability</strong> and <strong>risk perception</strong> concepts
+        </li>
+
+        <li>
+        <strong>Geospatial Data Analyst & Cartographer</strong> – Sky Geologic Investment, Kinshasa (2023)<br>
+        ▸ Analysis and processing of geospatial data using <strong>QGIS</strong>, <strong>ArcGIS</strong>, and <strong>PostgreSQL</strong><br>
+        ▸ Production of thematic maps for environmental and mining projects
+        </li>
+
+        <li>
+        <strong>IT Specialist / Cybersecurity Manager</strong> – Armobit, Kinshasa (2020–2021)<br>
+        ▸ Securing IT infrastructures<br>
+        ▸ Conducting cybersecurity audits and technology monitoring
+        </li>
+    </ul>
+    </section>
+
+
+    <section class="skills">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><strong>AI & ML:</strong> PyTorch, TensorFlow, scikit-learn</li>
+        <li><strong>Programming:</strong> Python, Java, HTML/CSS</li>
+        <li><strong>Data Analysis:</strong> pandas, seaborn, matplotlib, Power BI</li>
+        <li><strong>GIS:</strong> QGIS, ArcGIS, PostgreSQL/PostGIS</li>
+        <li><strong>Neuromorphic:</strong> Snntorch, SpikingJelly, Brian2</li>
+        <li><strong>Tools:</strong> Git, Linux, Docker, Jupyter</li>
+      </ul>
+    </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+
+      <div class="project-item">
+        <img src="assets/cnn1.png" alt="Facial Expression Recognition">
+        <div>
+          <h3>Facial Expression Recognition</h3>
+          <p>Comparison of energy performance between CNNs and SNNs for facial expression recognition tasks.</p>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <img src="assets/education_tracking.png" alt="Education Tracking App">
+        <div>
+          <h3>Education Tracking Application</h3>
+          <p>Developed with LLM and RDF Cube for personalized recommendations using natural language.</p>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <img src="assets/landslide_detection.png" alt="Landslide Detection">
+        <div>
+          <h3>Landslide Detection</h3>
+          <p>Reproduced Landslide4Sense using Sentinel-2 data and slope information.</p>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <img src="assets/information_spotting.png" alt="Information Spotting">
+        <div>
+          <h3>Information Spotting</h3>
+          <p>Visual content search in documents using SIFT descriptors and Streamlit interface.</p>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <img src="assets/mutuzo.png" alt="Mutuzo">
+        <div>
+          <h3>Mutuzo – Leaf Disease Detection</h3>
+          <p>Web application using Faster R-CNN to detect and classify leaf diseases with real-time visualization.</p>
+        </div>
+      </div>
+
+  </section>
+
+  <section id="certifications" class="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>SQL Language: The Complete Guide – Alphorm (2020)</li>
+      <li>Big Data and Hadoop: The Complete Guide – Alphorm (2022)</li>
+      <li>Big Data and Apache Spark – Alphorm (2022)</li>
+      <li>High Availability with PostgreSQL – Alphorm (2022)</li>
+      <li>ArcGIS Pro: Become a GIS Expert with the Software – Udemy (2023)</li>
+      <li>GIS – Part 1 (École Polytechnique Fédérale de Lausanne / EPFL) – Coursera (2024)</li>
+    </ul>
+  </section>
+
+
+    <section id="publications" class="publications">
+      <h2>Publications & Presentations</h2>
+      <ul>
+        <li>“Ontologies for Forest Risk Mapping” – Presented at PERFORSSA Workshop, 2025</li>
+        <li>“AI in Landslide Detection” – Conference abstract under review</li>
+      </ul>
+    </section>
+
+    <section id="gis-gallery" class="gis-gallery">
+      <h2>Galerie de Projets SIG</h2>
+      <iframe src="../assets/carte1.pdf" width="100%" height="600px"></iframe>
+      <p>Carte SIG au format PDF.</p>
+    </section>
+
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:dieudobyaombemw@gmail.com">dieudobyaombemw@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/DidioDieudonne">DidioDieudonne</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/byaombe-dieudonne">BYAOMBE Dieudonné</a></p>
+      <p>Telegram: @BYAOMBEDieudonne</p>
+    </section>
+  </main>
+
+  <footer>
+  </footer>
+</body>
+</html>
